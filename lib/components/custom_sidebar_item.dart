@@ -20,8 +20,9 @@ class Custom_sidebar_item extends StatelessWidget {
               width: 42.0,
               height: 42.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14),
-                  gradient: sideBarItem.linearGradient),
+                borderRadius: BorderRadius.circular(14),
+                gradient: sideBarItem.linearGradient,
+              ),
               child: Center(child: sideBarItem.icon),
             ),
             const SizedBox(

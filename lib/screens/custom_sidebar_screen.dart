@@ -3,8 +3,8 @@ import 'package:ui_designers/components/custom_sidebar_item.dart';
 import 'package:ui_designers/constants.dart';
 import 'package:ui_designers/model/sidebar.dart';
 
-class sidebar_screen extends StatelessWidget {
-  const sidebar_screen({
+class sidebarScreen extends StatelessWidget {
+  const sidebarScreen({
     Key? key,
   }) : super(key: key);
 

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ui_designers/constants.dart';
 
 class CustomNavbarButton extends StatelessWidget {
+  final void Function()? triggerAnimation;
   const CustomNavbarButton({
+    required this.triggerAnimation,
     Key? key,
   }) : super(key: key);
 
@@ -10,7 +12,7 @@ class CustomNavbarButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return RawMaterialButton(
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      onPressed: () {},
+      onPressed: triggerAnimation,
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
       constraints: const BoxConstraints(

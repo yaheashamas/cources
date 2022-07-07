@@ -1,10 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:ui_designers/components/list/custom_expolor_course_list.dart';
 import 'package:ui_designers/components/list/custom_resent_course_list.dart';
 import 'package:ui_designers/constants.dart';
 import 'package:ui_designers/screens/custom_home_navbar_screen.dart';
 import 'package:ui_designers/screens/custom_sidebar_screen.dart';
+import 'package:ui_designers/screens/custom_sideing_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -95,6 +95,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ],
               ),
             ),
+            SlidingUp(),
             IgnorePointer(
               ignoring: sidebarHidden,
               child: Stack(
